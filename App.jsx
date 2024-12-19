@@ -5,7 +5,7 @@ const App = () => {
   return (
     <View>
       <Text style={{fontSize: 30}}>This is my first React App</Text>
-      <Button title='click here'/>
+      <Button title='Press Me'/>
     </View>
   )
 }
