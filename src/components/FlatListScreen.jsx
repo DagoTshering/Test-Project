@@ -3,7 +3,17 @@ import React from 'react'
 /**
  * The FlatList display data in scrollable list.
  * The data should be in the form of array or array of objects and array should have a unique item, otherwise it cannot display it.
- * The FlatList component take four Props i.e data, renderItem, keyExtractor and contentContainerStyle
+ * The FlatList component take four Props i.e data, renderItem, keyExtractor and contentContainerStyle.
+ * FlatList iterates through the data array.
+ * For each element in the array, it passes an object to renderItem.
+    This object contains:
+    item: The current data item.
+    index: The index of the current data item.
+    separators: Metadata for styling separators between list items.
+ * You only need to define the renderItem function.
+ * FlatList handles the function call and passes the arguments (like item and index) for each element in the data array.
+ * The argument is passed internally by FlatList when it calls your renderItem function.
+
  */
 const data = [
     {id: 1, title:'Item 1'},
@@ -19,6 +29,7 @@ const data = [
 ];
 
 const FlatListScreen = () => {
+    // The renderItem telling FlatList how to render each item in list
     const renderItem = ({item}) => (
         <View style={styles.item}>
             <Text style={styles.title}>{item.title}</Text>
