@@ -1,7 +1,8 @@
 import { View, Text, Button, FlatList,} from 'react-native' // we want to import multiple components from a module, we have to use {} bracket
 import React from 'react'
-import LoginForm from './src/components/LoginForm'
-import ContactListScreen from './src/srceens/contact/ContactListScreen'
+// import LoginForm from './src/components/LoginForm'
+// import ContactListScreen from './src/srceens/contact/ContactListScreen'
+import ClassComponent from './src/components/ClassComponent'
 // import FlatListScreen from './src/components/FlatListScreen'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import Grid from './src/components/Grid'
@@ -30,7 +31,8 @@ const App = () => {
       {/* <SectionListScreen/> */}
       {/* <Grid/> */}
       {/* <LoginForm/> */}
-      <ContactListScreen/>
+      {/* <ContactListScreen/> */}
+      <ClassComponent/>
     </View>
   )
 }
