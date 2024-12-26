@@ -4,8 +4,9 @@ import React from 'react'
 // import ContactListScreen from './src/srceens/contact/ContactListScreen'
 // import ClassComponent from './src/components/ClassComponent'
 // import UseEffectMount from './src/components/UseEffectMountingPhase'
-import UseEffectUpdatingPhase from './src/components/UseEffectUpdatingPhase'
-import UseEffectUnmountingPhase from './src/components/UseEffectUnmountingPhase'
+// import UseEffectUpdatingPhase from './src/components/UseEffectUpdatingPhase'
+// import UseEffectUnmountingPhase from './src/components/UseEffectUnmountingPhase'
+import StyleWithButton from './src/components/StyleWithButton'
 // import FlatListScreen from './src/components/FlatListScreen'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import Grid from './src/components/Grid'
@@ -38,7 +39,8 @@ const App = () => {
       {/* <ClassComponent/> */}
       {/* <UseEffectMount/> */}
       {/* <UseEffectUpdatingPhase/> */}
-      <UseEffectUnmountingPhase/>
+      {/* <UseEffectUnmountingPhase/> */}
+      <StyleWithButton/>
     </View>
   )
 }
