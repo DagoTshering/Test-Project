@@ -1,6 +1,11 @@
 import { Button, Text, View } from 'react-native'
 import React, { Component } from 'react'
 import SecondComponent from './SecondComponent'
+/**
+ * Methods are the function defined within the class and object and can be called using them.
+ * Function are independent of class and object
+ * Class based and fuction based component can be used together
+ */
 
 class ClassComponent extends Component {
     constructor () {
