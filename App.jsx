@@ -7,6 +7,8 @@ import React from 'react'
 // import UseEffectUpdatingPhase from './src/components/UseEffectUpdatingPhase'
 // import UseEffectUnmountingPhase from './src/components/UseEffectUnmountingPhase'
 import StyleWithButton from './src/components/StyleWithButton'
+import Loading from './src/components/Loading'
+import PressableComponent from './src/components/PressableComponent'
 // import FlatListScreen from './src/components/FlatListScreen'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import Grid from './src/components/Grid'
@@ -20,7 +22,7 @@ import StyleWithButton from './src/components/StyleWithButton'
 
 const App = () => {
   return (
-    <View /*style={{flex: 1}}*/>
+    <View style={{flex: 1}}>
       {/* <JSX/>
       <First/>
       <Text style={{fontSize: 30}}>This is my first React App</Text>
@@ -28,7 +30,6 @@ const App = () => {
       {/* <Onpress/> */}
       {/* <UseStateHook/> */}
       {/* <Props/> */}
-      
       {/* <InputText/> */}
       {/* <Styling/> */}
       {/* <FlatListScreen/> */}
@@ -40,7 +41,9 @@ const App = () => {
       {/* <UseEffectMount/> */}
       {/* <UseEffectUpdatingPhase/> */}
       {/* <UseEffectUnmountingPhase/> */}
-      <StyleWithButton/>
+      {/* <StyleWithButton/> */}
+      {/* <Loading /> */}
+      <PressableComponent/>
     </View>
   )
 }
