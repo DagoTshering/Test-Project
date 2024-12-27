@@ -6,9 +6,11 @@ import React from 'react'
 // import UseEffectMount from './src/components/UseEffectMountingPhase'
 // import UseEffectUpdatingPhase from './src/components/UseEffectUpdatingPhase'
 // import UseEffectUnmountingPhase from './src/components/UseEffectUnmountingPhase'
-import StyleWithButton from './src/components/StyleWithButton'
-import Loading from './src/components/Loading'
-import PressableComponent from './src/components/PressableComponent'
+// import StyleWithButton from './src/components/StyleWithButton'
+// import Loading from './src/components/Loading'
+// import PressableComponent from './src/components/PressableComponent'
+import StatusBarExample from './src/components/StatusBarExample'
+import UseRefHook from './src/components/UseRefHook'
 // import FlatListScreen from './src/components/FlatListScreen'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import Grid from './src/components/Grid'
@@ -43,7 +45,9 @@ const App = () => {
       {/* <UseEffectUnmountingPhase/> */}
       {/* <StyleWithButton/> */}
       {/* <Loading /> */}
-      <PressableComponent/>
+      {/* <PressableComponent/> */}
+      {/* <StatusBarExample/> */}
+      <UseRefHook/>
     </View>
   )
 }
