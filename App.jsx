@@ -9,8 +9,15 @@ import React from 'react'
 // import StyleWithButton from './src/components/StyleWithButton'
 // import Loading from './src/components/Loading'
 // import PressableComponent from './src/components/PressableComponent'
-import StatusBarExample from './src/components/StatusBarExample'
-import UseRefHook from './src/components/UseRefHook'
+// import StatusBarExample from './src/components/StatusBarExample'
+// import UseRefHook from './src/components/UseRefHook'
+// import PlatformExample from './src/components/PlatformExample'
+// import SearchBar from './src/components/SearchBar'
+// import GET_API from './src/components/GET_API'
+// import POST_API from './src/components/POST_API'
+// import PUT_API from './src/components/PUT_API'
+// import PATCH_API from './src/components/PATCH_API'
+import DELETE_API from './src/components/DELETE_API'
 // import FlatListScreen from './src/components/FlatListScreen'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import Grid from './src/components/Grid'
@@ -47,7 +54,14 @@ const App = () => {
       {/* <Loading /> */}
       {/* <PressableComponent/> */}
       {/* <StatusBarExample/> */}
-      <UseRefHook/>
+      {/* <UseRefHook/> */}
+      {/* <PlatformExample/> */}
+      {/* <SearchBar/> */}
+      {/* <GET_API/> */}
+      {/* <POST_API/> */}
+      {/* <PUT_API/> */}
+      {/* <PATCH_API/> */}
+      <DELETE_API/>
     </View>
   )
 }
