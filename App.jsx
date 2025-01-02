@@ -1,5 +1,9 @@
 import { View, Text, Button, FlatList,} from 'react-native' // we want to import multiple components from a module, we have to use {} bracket
 import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Home from './src/navigation-screens/Home';
+import About from './src/navigation-screens/About';
 // import LoginForm from './src/components/LoginForm'
 // import ContactListScreen from './src/srceens/contact/ContactListScreen'
 // import ClassComponent from './src/components/ClassComponent'
@@ -17,7 +21,7 @@ import React from 'react'
 // import POST_API from './src/components/POST_API'
 // import PUT_API from './src/components/PUT_API'
 // import PATCH_API from './src/components/PATCH_API'
-import DELETE_API from './src/components/DELETE_API'
+// import DELETE_API from './src/components/DELETE_API'
 // import FlatListScreen from './src/components/FlatListScreen'
 // import SectionListScreen from './src/components/SectionListScreen'
 // import Grid from './src/components/Grid'
@@ -29,9 +33,11 @@ import DELETE_API from './src/components/DELETE_API'
 // import Props from './src/components/Props'
 // import UseStateHook from './src/components/UseStateHook'
 
+const Stack = createNativeStackNavigator();
+
 const App = () => {
   return (
-    <View style={{flex: 1}}>
+    <View /*style={{flex: 1}}*/>
       {/* <JSX/>
       <First/>
       <Text style={{fontSize: 30}}>This is my first React App</Text>
@@ -61,7 +67,13 @@ const App = () => {
       {/* <POST_API/> */}
       {/* <PUT_API/> */}
       {/* <PATCH_API/> */}
-      <DELETE_API/>
+      {/* <DELETE_API/> */}
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen  name="Home" component={Home}/>
+          <Stack.Screen  name="About" component={About}/>
+        </Stack.Navigator>
+      </NavigationContainer>
     </View>
   )
 }
